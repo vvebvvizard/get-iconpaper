@@ -12,7 +12,7 @@ URL : [get.iconpaper.org](http://get.iconpaper.org)
     <link href="geticonpaper/geticonpaper.css" rel="stylesheet" type="text/css" media="screen" />
 
 
-2/ Include the [geticonpaper.php](https://github.com/gor0n/Get-Iconpaper/blob/master/geticonpaper/geticonpaper.php) file on your page with `<php include>` ( in this file you can change the layout and reorganize all elements )
+2/ Include the [geticonpaper.php](https://github.com/gor0n/Get-Iconpaper/blob/master/geticonpaper/geticonpaper.php) file on your page with `<?php include ?>` ( in this file you can change the layout and reorganize all elements )
 
     <?php include('geticonpaper/geticonpaper.php'); ?>
 
