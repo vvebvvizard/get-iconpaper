@@ -3,7 +3,7 @@ Get Iconpaper on your website
 
 URL : [get.iconpaper.org](http://get.iconpaper.org)
 
-![Screenshot](http://www.iconpaper.org/geticonpaper/geticonpaper.jpg)
+![Screenshot](http://www.iconpaper.org/geticonpaper/get.jpg)
 
 ### Directions ###
 
