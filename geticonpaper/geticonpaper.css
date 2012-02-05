@@ -1,0 +1,80 @@
+/*   
+Iconpaper RSS Reader for Websites
+URI: http://get.iconpaper.org/
+Author: Verswyvel Vivian
+*/
+
+/* Wrap all the items */
+#geticonpaper-wrap {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
+	padding: 5px;
+}
+
+/* Wrap each item */
+.geticonpaper-wraprssitem {
+	height: 60px;
+	padding: 3px;
+}
+
+/* Wrap the thumbnail */
+.geticonpaper-rssthumb {
+	position:relative; 
+	float: left;
+	border: 3px solid #fff;
+	/* shadow */
+	-moz-box-shadow: 0px 1px 1px #989898;
+	-webkit-box-shadow: 0px 1px 1px #989898;
+	box-shadow: 0px 1px 1px #989898;
+}
+
+/* Width for the thumbnail of the current item */
+.geticonpaper-rssthumb img {
+	width: 50px;
+}
+
+/* Style for the infos of the current item */
+.geticonpaper-rssinfos {
+	position:relative;
+	float: left;
+	padding: 0 0 0 10px;
+	font-size: 11px;
+	color: #000;
+}
+
+/* Font size of the author of the current item */
+.geticonpaper-rssauthor {
+	font-size: 9px;
+}
+
+/* Download button */
+.geticonpaper-dlbutton {
+	width: 44px;
+	cursor: pointer;
+	padding: 4px;
+	margin: 3px 3px 3px 5px;
+	font-size: 9px;
+	/* radius */
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	/* shadow */
+	-moz-box-shadow: 0px 1px 1px #989898;
+	-webkit-box-shadow: 0px 1px 1px #989898;
+	box-shadow: 0px 1px 1px #989898;
+	/* gradient */
+	background: #F3F7F8; /* old browsers */
+ 	background: linear-gradient(bottom, #E3EBEF 17%, #F3F7F8 59%, #FEFEFE 80%);
+	background: -o-linear-gradient(bottom, #E3EBEF 17%, #F3F7F8 59%, #FEFEFE 80%);
+	background: -moz-linear-gradient(bottom, #E3EBEF 17%, #F3F7F8 59%, #FEFEFE 80%);
+	background: -ms-linear-gradient(bottom, #E3EBEF 17%, #F3F7F8 59%, #FEFEFE 80%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0.17, #E3EBEF), color-stop(0.59, #F3F7F8), color-stop(0.8, #FEFEFE));
+}
+
+.geticonpaper-dlbutton:hover {
+	background: #ECF0F3; /* old browsers */
+ 	background: linear-gradient(bottom, #F8F9FA 0%, #F0F3F5 30%, #ECF0F3 70%);
+	background: -o-linear-gradient(bottom, #F8F9FA 0%, #F0F3F5 30%, #ECF0F3 70%);
+	background: -moz-linear-gradient(bottom, #F8F9FA 0%, #F0F3F5 30%, #ECF0F3 70%);
+	background: -ms-linear-gradient(bottom, #F8F9FA 0%, #F0F3F5 30%, #ECF0F3 70%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #F8F9FA), color-stop(0.3, #F0F3F5), color-stop(0.7, #ECF0F3));
+}
