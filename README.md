@@ -1,7 +1,7 @@
 Get Iconpaper on your website
 =============================
 
-URL : [get.iconpaper.org](http://get.iconpaper.org)
+`website` [get.iconpaper.org](http://get.iconpaper.org)
 
 ![Screenshot](http://www.iconpaper.org/geticonpaper/get.jpg)
 
