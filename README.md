@@ -17,7 +17,7 @@ Get Iconpaper on your website
     <?php include('geticonpaper/geticonpaper.php'); ?>
 
 
-3/ Call the function wherever you want on your page, it will display the number of rss items you've set as parameter
+3/ Call the function wherever you want on your page, it will display the number of rss items you've set as argument
 
     <?php getIconpaper(3); ?>
 
@@ -26,13 +26,13 @@ Try the [example page](https://github.com/gor0n/Get-Iconpaper/blob/master/exampl
 
 ### Options ###
 
-You can set a second parameter to trim the title for your needs
+You can set a second argument to trim the title for your needs
 
 	<?php getIconpaper(3,20); ?>
 	
 In this case, it will trim the title to 20 characters (with " ..."). So it will crop the title to 20 - 4 characters and add " ..." to the end
 
-`example` the title "Professor von Quackerstein" limited to 20 char become "Professor von Qu ..."
+`example` the title "Professor von Quackenstein" limited to 20 char become "Professor von Qu ..."
 
 ### Versions ###
 
