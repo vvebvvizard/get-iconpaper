@@ -34,8 +34,9 @@
 	
     <div id="getter">
     
-      <!--Call the function wherever you want. You neet to provide the number of posts you want to display as parameter (10 max)-->
-      <?php getIconpaper(3); ?>
+      <!--Call the function wherever you want. You need to provide the number of posts (3 in this example) you want to display as parameter (10 max)-->
+      <?php getIconpaper(3,20); ?>
+      <!--You can provide an optional parameter (20 in this example), providing a maximum of characters for the title. Useful to adapt the function to your layout. The title will end with ... (ex : here the title for Professor von Quackerstein will be "Professor von Qu ..."-->
       
     </div>
 		

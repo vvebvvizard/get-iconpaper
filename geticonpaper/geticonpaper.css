@@ -41,8 +41,8 @@ Author: Verswyvel Vivian
 	color: #000;
 }
 
-/* Font size of the author of the current item */
-.geticonpaper-rssauthor {
+/* Font size of the category of the current item */
+.geticonpaper-rsscategory {
 	font-size: 9px;
 }
 

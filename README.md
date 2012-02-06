@@ -24,6 +24,16 @@ Get Iconpaper on your website
 
 Try the [example page](https://github.com/gor0n/Get-Iconpaper/blob/master/example.php) to see it in action
 
+### Options ###
+
+You can set a second parameter to trim the title for your needs
+
+	<?php getIconpaper(3,20); ?>
+	
+In this case, it will trim the title to 20 characters (with " ..."). So it will crop the title to 20 - 4 characters and add " ..." to the end
+
+`example` the title "Professor von Quackerstein" limited to 20 char become "Professor von Qu ..."
+
 ### Versions ###
 
 2012 01 04 - **1.0**

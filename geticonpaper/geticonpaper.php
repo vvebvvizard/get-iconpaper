@@ -6,9 +6,10 @@
  *
  * @author Verswyvel Vivian
  * @param $nbitems number of RSS items to display (10 max)
+ * @param $end  optional, title length limitation to adapt to your layout
  */
 
-function getIconpaper($nbitems) {
+function getIconpaper($nbitems,$end=null) {
 	# Use curl to get the xml file
 	$ch = curl_init('http://feeds.feedburner.com/iconpaper?format=xml');
 	curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
@@ -34,6 +35,14 @@ function getIconpaper($nbitems) {
 		
 		# Description includes some other informations, we need to extract these informations
 		$thumbnail = substr($desc, 0, 75);
+
+		# If title length limitation is provided, we crop the title
+		if ( $end != null ) {
+			if ( strlen($title) > $end ) {
+				$title = substr($title, 0, $end-4); # end to -4 because of the " ..." we'll add
+				$title .= " ... ";
+			}
+		}
 		
 		# Get the author (not used in this example)
 		# $getauthorStep1 = explode("by", $desc);
@@ -46,7 +55,7 @@ function getIconpaper($nbitems) {
 		# So we get the author and category with $getauthorStep2[0] and $getcategoryStep2[0]
 		
 		# Write the current item in the loop
-		echo '<div class="geticonpaper-wraprssitem"><div class="geticonpaper-rssthumb">', $thumbnail, '</div><div class="geticonpaper-rssinfos">', $title, '</br><span class="geticonpaper-rssauthor">in ', $getcategoryStep2[0], '</span><div onclick="window.open(\'', $url, '\', \'_blank\'); return false;" class="geticonpaper-dlbutton">Download</div></div></div>';
+		echo '<div class="geticonpaper-wraprssitem"><div class="geticonpaper-rssthumb">', $thumbnail, '</div><div class="geticonpaper-rssinfos">', $title, '</br><span class="geticonpaper-rsscategory">in ', $getcategoryStep2[0], '</span><div onclick="window.open(\'', $url, '\', \'_blank\'); return false;" class="geticonpaper-dlbutton">Download</div></div></div>';
     }
     echo '</div>';
 }
