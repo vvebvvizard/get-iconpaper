@@ -7,8 +7,9 @@ Author: Verswyvel Vivian
 /* Wrap all the items */
 #geticonpaper-wrap {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
+	color: #000;
 	padding: 5px;
-}
+} /* add a width here if you need to fix it */
 
 /* Wrap each item */
 .geticonpaper-wraprssitem {
@@ -38,7 +39,6 @@ Author: Verswyvel Vivian
 	float: left;
 	padding: 0 0 0 10px;
 	font-size: 11px;
-	color: #000;
 }
 
 /* Font size of the category of the current item */
